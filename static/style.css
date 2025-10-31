@@ -1,0 +1,98 @@
+/* Kèk CSS debaz pou imite style la */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Koulè background jeneral */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.chat-container {
+    width: 100%;
+    max-width: 400px; /* Tankou yon telefòn */
+    height: 90vh;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Tèt Chat la */
+.chat-header {
+    background-color: #075E54; /* Koulè WhatsApp Green */
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.avatar {
+    background-color: #128C7E;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Zòn Mesaj yo */
+.chat-messages {
+    flex-grow: 1;
+    padding: 10px;
+    overflow-y: auto;
+    background-image: url('chat-background.jpg'); /* Ou ka ajoute yon imaj background WhatsApp */
+    background-color: #ECE5DD; /* Koulè background default WhatsApp */
+}
+
+.message {
+    padding: 8px 12px;
+    border-radius: 7px;
+    margin-bottom: 8px;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+.sent {
+    background-color: #DCF8C6; /* Koulè mesaj voye yo */
+    margin-left: auto;
+    text-align: right;
+}
+
+.received {
+    background-color: #FFF; /* Koulè mesaj resevwa yo */
+    margin-right: auto;
+    box-shadow: 0 1px 0.5px rgba(0, 0, 0, 0.13);
+}
+
+/* Zòn Input la */
+.chat-input-area {
+    display: flex;
+    padding: 10px;
+    background-color: #f7f7f7;
+}
+
+#message-input {
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+}
+
+.chat-input-area button {
+    background-color: #128C7E;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+}
