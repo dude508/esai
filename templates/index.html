@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chat | WhatsApp Style</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <span class="back-button">←</span>
+            <div class="profile-info">
+                <div class="avatar">AI</div>
+                <div class="name">🧠 ALIX AI</div>
+            </div>
+            <span class="menu-button">⋮</span>
+        </div>
+
+        <div class="chat-messages" id="chat-messages">
+            <div class="message received">Bonjou! Mwen se yon AI ki la pou reponn kesyon w yo.</div>
+        </div>
+
+        <div class="chat-input-area">
+            <input type="text" id="message-input" placeholder="Tape yon mesaj..." onkeydown="if (event.key === 'Enter') sendMessage()">
+            <button onclick="sendMessage()">Voye</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
